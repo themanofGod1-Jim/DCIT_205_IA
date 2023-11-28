@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <link href="register.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <img class="logo" src="Images/comScience_logo.png">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Faculty.html">Faculty</a>
+            <a href="courses.html"> Courses</a>
+            <a href="Resources.html">Resources</a>
+            <a href="Contact.html">Contact</a>
+            <a href="FAQ.html">FAQ</a>
+            
+        </div>
+    </nav>
+
+
+<div class="header" >
+    <p>Short Courses Registration Form </p>
+</div>
+
+<form action="process_registration.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="courses">Select Courses:</label>
+    <select id="courses" name="courses[]" multiple required>
+      <option value="Computer Network Fundamental">Computer Network Fundamental</option>
+      <option value="Mobile App Developmen">Mobile App Development</option>
+      <option value="Introduction To Web Programming">Introduction To Web Programming</option>
+      <option value="Information Security and Ethical Hacking">Information Security and Ethical Hacking</option>
+
+    </select>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
